@@ -25,6 +25,7 @@ class AishTea(BaseMenu):
 class Wang(BaseMenu):
     pass
 #2 Encapsulation 2 (akses cuma di class ini)
+
 class Saguku(BaseMenu):
     @property
     def harga(self):
@@ -56,3 +57,17 @@ class AyamGeprek(BaseMenu):
 class TelaTela(BaseMenu):
     def __str__(self):
         return f"{self.nama_menu} | {self.deskripsi}"
+    
+
+ ######################################## NO. 2 ############################################
+    
+class Pelanggan:
+    nama_pelanggan = models.CharField(max_length=100)
+    pesanan = models.CharField(max_length=300)
+
+ ######################################## NO. 3 ############################################
+
+class NasiKuning(BaseMenu):
+ def harga(self):
+        return f"{self.nama_menu} {self.deskripsi}"
+
